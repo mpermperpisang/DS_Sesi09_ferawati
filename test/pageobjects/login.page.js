@@ -17,7 +17,7 @@ class LoginPage extends Page {
 
     async validateLockedOutUserError () {
         await this.errorLockedOutUser.waitForDisplayed({ timeout: 2500 });
-        expect(this.errorLockedOutUser).toBeDisplayed()
+        await expect(this.errorLockedOutUser).toBeDisplayed()
     }
 
     open () {

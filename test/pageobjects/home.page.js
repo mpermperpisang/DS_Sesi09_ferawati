@@ -5,8 +5,8 @@ class HomePage extends Page {
     get iconCart () { return $('.shopping_cart_link'); }
 
     async validateHomePage() {
-        expect(browser).toHaveUrlContaining('/inventory.html')
-        expect(this.iconCart).toBeDisplayed()
+        await expect(browser).toHaveUrlContaining('/inventory.html')
+        await expect(this.iconCart).toBeDisplayed()
     }
 
     open () {
