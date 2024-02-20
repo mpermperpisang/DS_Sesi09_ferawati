@@ -1,18 +1,18 @@
 # DS_Sesi09_ferawati
 
 ### Requirement
-[x] NodeJS >= v16.x.x (https://nodejs.org/en/download)</br>
-[x] Global NPM (npm install npm -g)</br>
-[x] Code Editor (Visual Studio Code or VS Code)
+- [x] NodeJS >= v16.x.x (https://nodejs.org/en/download)</br>
+- [x] Global NPM (npm install npm -g)</br>
+- [x] Code Editor (Visual Studio Code or VS Code)
 
 ### How to Start
-[x] Buatlah GitHub repository dengan format `DS_Sesi09_<nama mentee>`</br>
-[x] Clone repo ke local device</br>
-[x] Run `npm init --yes`</br>
-[x] Run `npm install npm -g`</br>
-[x] Run `npm init wdio . -- --yes`</br>
-[x] Run VS Code / terminal as a admin</br>
-[x] Run `npm run digital-skola-ferawati`
+- [x] Buatlah GitHub repository dengan format `DS_Sesi09_<nama mentee>`</br>
+- [x] Clone repo ke local device</br>
+- [x] Run `npm init --yes`</br>
+- [x] Run `npm install npm -g`</br>
+- [x] Run `npm init wdio . -- --yes`</br>
+- [x] Run VS Code / terminal as a admin</br>
+- [x] Run `npm run digital-skola-ferawati`
 
 ### Summary
 Lesson learned today:</br>
