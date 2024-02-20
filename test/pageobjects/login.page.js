@@ -8,16 +8,15 @@ class LoginPage extends Page {
     get buttonLogin () { return $('#login-button'); }
     get errorLockedOutUser () { return $('//h3[text()="Epic sadface: Sorry, this user has been locked out."]') }
 
-    async login () {
-        console.log(`USERNAME: ${process.env.USERNAME_STANDARD_USER}`)
-        console.log(`PASSWORD: ${process.env.PASSWORD_SAUCEDEMO}`)
-
-        await this.fieldUsername.setValue(process.env.USERNAME_STANDARD_USER);
-        await this.fieldPassword.setValue(process.env.PASSWORD_SAUCEDEMO);
+    async login (username, password) {
+        await this.fieldUsername.waitForDisplayed({ timeout: 2500 });
+        await this.fieldUsername.setValue(username);
+        await this.fieldPassword.setValue(password);
         await this.buttonLogin.click();
     }
 
     async validateLockedOutUserError () {
+        await this.errorLockedOutUser.waitForDisplayed({ timeout: 2500 });
         expect(this.errorLockedOutUser).toBeDisplayed()
     }
 

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "wdio": "wdio run ./wdio.conf.js"
+    "digital-skola-ferawati": "wdio run ./wdio.conf.js"
   },
   "keywords": [],
   "author": "",
